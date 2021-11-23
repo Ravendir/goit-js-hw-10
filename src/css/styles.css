@@ -25,11 +25,6 @@ body {
   margin: 150px auto 0;
 }
 
-/* .card-body {
-  display: flex;
-  justify-content: center;
-} */
-
 .card-title {
   text-align: center;
   font-size: 50px;
@@ -42,19 +37,6 @@ body {
 .country-name {
   font-size: 20px;
 }
-/* .list-item {
-  font-size: 15px;
-  margin-bottom: 5px;
-} */
-
-/* .search {
-  display: block;
-  margin: 150px auto 0;
-} */
-
-/* .card-info {
-  margin-right: 40px;
-} */
 
 .country-list {
   text-align: center;
