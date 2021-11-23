@@ -15,7 +15,7 @@ const createListMarkup = countries => {
   const listMarkup = countries
     .map(
       ({ name, flags }) => `<li class="country-item">
-      <img src="${flags.svg}" alt="flags" width="25px" height="20px">
+      <img src="${flags.svg}" alt="flags" width="140px" height="100px">
       <p class="text">${name.official}</p>
       </li>`,
     )
@@ -27,13 +27,16 @@ const createInfoMarkup = countries => {
   const infoMarkup = countries
     .map(
       ({ capital, population, languages, name, flags }) =>
-        `<div class="title">
-          <img src="${flags.svg}" alt="flags" width="25px" height="20px">
-          <h2>${name.official}</h2>
+        `<div class='card-title'>
+        <div class="title">
+          <img src="${flags.svg}" alt="flags" width="140px" height="100px">
+          <h2 class='country-name'>${name.official}</h2>
         </div>
-        <p><b>Capital:</b> ${capital}</p>
-        <p><b>Population:</b> ${population}</p>
-    <p><b>Languages:</b> ${Object.values(languages)}</p>`,
+        <p class='card-text'><b>Capital:</b> ${capital}</p>
+        <p class='card-text'><b>Population:</b> ${population}</p>
+    <p class='card-text'><b>Languages:</b> ${Object.values(languages)}</p>
+    </div>
+    `,
     )
     .join('');
   return (refs.info.innerHTML = infoMarkup);

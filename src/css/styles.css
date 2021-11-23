@@ -11,6 +11,9 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  background-image: url('https://static.wixstatic.com/media/261ef1_2b950a1f4c324d37aae7374098e7cdb7~mv2.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #search-box {
@@ -18,4 +21,43 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  display: block;
+  margin: 150px auto 0;
+}
+
+/* .card-body {
+  display: flex;
+  justify-content: center;
+} */
+
+.card-title {
+  text-align: center;
+  font-size: 50px;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+.country-name {
+  font-size: 20px;
+}
+/* .list-item {
+  font-size: 15px;
+  margin-bottom: 5px;
+} */
+
+/* .search {
+  display: block;
+  margin: 150px auto 0;
+} */
+
+/* .card-info {
+  margin-right: 40px;
+} */
+
+.country-list {
+  text-align: center;
+  margin: 50px auto 0;
+  font-size: 20px;
 }
